@@ -1,4 +1,4 @@
-# ACT-34B Duplication
+# ACT-34B Replication
 This repo is going to be documentation of my attempt to learn how to duplicate the ACT-34B transmitter by Linear Corp.
 
 # The problem

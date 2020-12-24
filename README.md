@@ -19,7 +19,7 @@ After taking a look at the outside, the remote actually states that the frequenc
 
 After the easy part was done, I had to find out what how I was going to find out what information was encoded when sent.
 I took a couple hours to read up on any literature I could find on garage door openers, specifically the ACT-34B transmitter. 
-(Installation manual)[https://www.linearproaccess.com/wp-content/uploads/ACT-31B_ACT-34B.pdf] and (promotion literature)[https://www.linearproaccess.com/wp-content/uploads/ACT_Family_Compatibility_of_TRANSPROX.pdf]
+[Installation manual](https://www.linearproaccess.com/wp-content/uploads/ACT-31B_ACT-34B.pdf) and [promotion literature](https://www.linearproaccess.com/wp-content/uploads/ACT_Family_Compatibility_of_TRANSPROX.pdf)
 
 While doing so, I found out that the transmitter encodes data by using Amplitude Modulation.
 Amplitude Modulation encodes information in a wave by switching between two different amplitudes to encode binary data.

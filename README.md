@@ -11,7 +11,7 @@ I knew that a transmitter of any sort (garage door opener, gate opener) transmit
  - How the data was encoded in the radio wave
  - What frequency the remote was transmitting at
  - How to find what data was being encoded in the wave
- - How to reprogram another remote to send that same data
+ - How to reprogram / create another remote to send that same data
 
 # Starting out
 I started out by analyzing the remote and seeing if I could find any useful information on the remote itself.

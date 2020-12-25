@@ -41,7 +41,11 @@ Because any remote is just a radio wave with encoded data, I can create my own r
 
 I quickly ran into a problem. The frequency on the transceiver modules I could find online were all larger frequencies around 2.4Ghz. I looked online for a transmitter that could transmit at 318mhz, but all I could find was prexisting garage door openers, which I mentioned earlier, would not be able to be used. I also considered using a transmitter that supports a range of frequencies, but they turned out to be quite expensive. 
 
-http://www.hoperf.com/ic/rf_transceiver/CMT2300A.html
+
+Sub-1Ghz transmitter
+RFM110W
+http://www.hoperf.com/modules/rf_transmitter/RFM110.html
+https://www.digikey.com/en/products/detail/rf-solutions/RFM110W-433S1/6564916
 
 I'm going to need the following parts for the remotes:
  - [Arduino Nano](https://www.amazon.com/LAFVIN-Board-ATmega328P-Micro-Controller-Arduino/dp/B07G99NNXL/ref=sr_1_6?dchild=1&keywords=arduino+nano&qid=1608851423&sr=8-6)

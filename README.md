@@ -37,11 +37,12 @@ I did some research on how I could program a ACT-34B and I discovered that I wou
 # Creating a remote
 Because any remote is just a radio wave with encoded data, I can create my own remote with an arduino nano and tranceiver module. I found some projects online of others creating similar remotes. [1](https://www.youtube.com/watch?v=-BDCmwNssiw) [2](https://www.youtube.com/watch?v=I6TKGMbHcfo)
 
-I'm going to need the following parts for each remote:
+I'm going to need the following parts for the remotes:
  - [Arduino Nano](https://www.amazon.com/LAFVIN-Board-ATmega328P-Micro-Controller-Arduino/dp/B07G99NNXL/ref=sr_1_6?dchild=1&keywords=arduino+nano&qid=1608851423&sr=8-6)
  - [A transceiver module](https://www.amazon.com/MakerFocus-NRF24L01-Transceiver-Antistatic-Compatible/dp/B01IK78PQA/ref=as_li_ss_tl?ie=UTF8&qid=1547396728&sr=8-4&keywords=nrf24l01+pa+lna&linkCode=sl1&tag=howto045-20&linkId=2633b70ca0153dc90317bd6f33b40079&language=en_US)
  - [a power regulator for the transceiver]( https://www.amazon.com/Aideepen-Wireless-Transceiver-NRF24L01-Antenna/dp/B01ICU18XC/ref=as_li_ss_tl?ie=UTF8&qid=1533398618&sr=8-8&keywords=NRF24L01&linkCode=sl1&tag=howto045-20&linkId=6a0d99d36f781543f23f967281c11309)
- - [2 buttons]
+ - [9V battery connector](https://www.banggood.com/5Pcs-175mm-9V-T-Type-I-Type-Battery-Buckle-Connector-Snap-Clip-Lead-Cable-p-1313739.html?utm_source=google&utm_medium=organic&utm_content=-&utm_campaign=none_pps_copy&_branch_match_id=853025810499564735&cur_warehouse=CN&ID=554248)
+ - [buttons](https://www.amazon.com/Gikfun-12x12x7-3-Tactile-Momentary-Arduino/dp/B01E38OS7K/ref=sr_1_6?dchild=1&keywords=tactile+buttons&qid=1608856496&sr=8-6)
  
 # Receiving the data
 In order to continue, I had to find out what data was being sent from the original remote. I knew what comprised most of the MegaCode, but there were too many unknowns. I was not sure if the 2 blocks of data were all sent at once, or which block of data went first, along with other complications. I would have to use a receiver to read what data was being sent from the original remote. I can actually use the parts I ordered to accomplish this because I had ordered transceivers, which are a combination of transmitters, and receivers. This allows me not only to send data, but also receive it. Since I am ordering two of them, this allows me to test the message being sent from one of the remotes once I create them as well.

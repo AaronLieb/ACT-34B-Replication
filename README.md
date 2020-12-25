@@ -13,7 +13,7 @@ I knew that a transmitter of any sort (garage door opener, gate opener) transmit
  - How to find what data was being encoded in the wave
  - How to reprogram / create another remote to send that same data
 
-# Starting out
+# Research
 I started out by analyzing the remote and seeing if I could find any useful information on the remote itself.
 After taking a look at the outside, the remote actually states that the frequency is 318 MHz. There was also two numbers numbers on the inside of the remote, 
 a 5 digit sticker reading 17728, and a 4 digit sticker reading 0634.
@@ -30,6 +30,8 @@ Amplitude Modulation encodes information in a wave by switching between two diff
 The documentation for the ACT-34B only mentions that the format of the data is MegaCode format, which is Linear Corp's proprietary format that can have 1 million unique encoded values. This means that the data could be stored at least in a 20 bit unsigned integer. The documentation for the ACT-34B also lists this model as being "Factory Block Coded with facility and ID codes" meaning that multiple pieces of information are being sent together in blocks, and that the information being sent was determined at the factory and can not be changed. The two pieces of information being sent can be assumed to be the facility and ID code.
 
 After digging around on the internet a bit more I found a useful review on the [Walmart listing of this product](https://www.walmart.com/ip/MegaCode-ACT-34B-Keyfob-Transmitter/170976222), stating that the 5 digit sticker found inside the transmitter is actually a unique 16 bit ID code, which is part of the MegaCode. But we know that the number must be at least 20 bits, so that leaves the remaining 4 bits to be a facility code. The review also mentions that the default facility code is 0, and that there is no way of finding the facility code for sure without having the box that the transmitters were shipped in. However, since the facility code is only 4 bits, there are only 16 (2^4) combinations for the code.
+
+The last piece of useful information that I found was the most useful information I had found thus far. I was watching a presentation from [AppSec California 2016 by Samy Kamkar](https://www.youtube.com/watch?v=1RipwqJG50c), and he mentions that the FCC requires that all devices that transmit in RF must be registered with the FCC. This means that all the innerworkings of the device must be publically available, including the frequency, what data is being sent, how the data was encoded, and any other specifications like the timing of the data encoding. This was very helpful to me, and I will touch on it more when I get to creating the remote.
 
 # Programming a remote
 I did some research on how I could program a ACT-34B and I discovered that I would have to use the specific linear corp receiver that the community owns, or use my own linear corp receiver along with a ACT-34C that would allow me to change the facility and ID codes. Since I am not sure what receiver the community uses, I would not want to take take this route, as it would also be expensive. There are also not any other remotes I could find that would be able to encode blocked 20 bit code with the amount of customization I would need.

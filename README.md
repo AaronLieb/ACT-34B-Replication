@@ -49,3 +49,6 @@ I'm going to need the following parts for the remotes:
  
 # Receiving the data
 In order to continue, I had to find out what data was being sent from the original remote. I knew what comprised most of the MegaCode, but there were too many unknowns. I was not sure which block of data went first, along with a couple other of small details. I would have to use a receiver to read what data was being sent from the original remote. I decided to order a [RTL-SDR](https://www.amazon.com/NooElec-NESDR-Smart-Bundle-R820T2-Based/dp/B01GDN1T4S/), which is a RealTek Software Defined Radio, which allows me to receive radio waves on a large range of frequencies, and view them on software. This, combined with the information from the FCC tests would allow me to get a precise reading of the data the transmitter was encoding
+
+# Updates
+I am currently waiting on the parts to be delivered. I will update this document as the project progresses!
